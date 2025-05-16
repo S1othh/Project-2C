@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week Eight - In-Class Activity</title>
+    <link rel="stylesheet" href="2C.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <h1>Workbook 2C</h1>
+        </div>
+        <div class="header-right">
+            <nav>
+                <a href="./2A.html">2A</a>
+                <a href="./week4.html">2B</a>
+                <a href="./2C.html">2C</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hw-overview">
+        <div class="hw-text">
+            <h2>Week Eight</h2>
+            <h2>In Class Activity</h2>
+
+            <h2>Circuit One</h2>
+            <div class="image-container single">
+                <img src=".\Project 2C Image\Image 3.1.png" alt="Circuit One - Image 3.1" class="pc-image">
+            </div>
+            <p>This configuration combines a hobby servo on one of the Arduino's PWM-capable digital pins with a light sensor (the LDR and fixed resistor wired as a voltage divider into the Arduino's analog input). The Arduino reads a different voltage at A0 as the photoresistor's ambient light changes, maps that value to a range of 0 to 180°, and then drives the servo arm to the appropriate angle.</p>
+
+            <div class="image-container single">
+                <img src=".\Project 2C Image\Image 3.2.jpg" alt="Circuit One - Image 3.2" class="pc-image">
+            </div>
+            <div class="image-container single">
+                <img src=".\Project 2C Image\iMAGE 3.3.jpg" alt="Circuit One - Image 3.3" class="pc-image">
+            </div>
+            <p>This code makes my motor arm sweep according to the light level detected by the photoresistor using the built-in Servo library. I connect the servo to digital pin 9 in <code>setup()</code> and establish a 9600 baud serial link for debugging. I then read the analog voltage from A1 into <code>photo</code> in <code>loop()</code> and printed the raw value. The servo is instructed to turn 180° if the reading drops below the 700 threshold (darker conditions); if not, it returns to 0°.</p>
+
+            <h2>Circuit Two</h2>
+            <div class="image-container single">
+                <img src=".\Project 2C Image\Image 3.5.png" alt="Circuit Two - Image 3.5" class="pc-image">
+            </div>
+            <p>I've integrated an HC-SR04 ultrasonic distance sensor with the piezo buzzer in this configuration so that the circuit can both detect distance and produce sound. With the help of the HC-SR04's four pins (VCC and GND for power, and Trig and Echo connected to two digital pins on the Arduino), the microcontroller can send out a brief ultrasonic pulse and measure how long it takes for it to return, which allows it to determine the distance of an object. The buzzer may then be programmed to respond to that distance value. For instance, I could set the tone to rise in pitch as an object approaches or only sound when an object crosses a predetermined threshold. By doing this, I can convert spatial data into auditory feedback.</p>
+
+            <div class="image-container single">
+                <img src=".\Project 2C Image\Image 3.6.jpg" alt="Circuit Two - Image 3.6" class="pc-image">
+            </div>
+            <p>The code makes the Arduino send out an ultrasonic from the HC‑SR04 sensor and then listens for the echo. It measures how long the echo takes to come back and converts that time into a distance in centimeters. Finally, it prints that distance value to the Serial Monitor on your computer.</p>
+
+            <div class="image-container single">
+                <img src=".\Project 2C Image\Image 3.7.jpg" alt="Circuit Two - Image 3.7" class="pc-image">
+            </div>
+            <div class="image-container single">
+                <img src=".\Project 2C Image\Image 3.8.jpg" alt="Circuit Two - Image 3.8" class="pc-image">
+            </div>
+
+            <h2>Circuit Three</h2>
+            <div class="image-container single">
+                <img src=".\Project 2C Image\Image 3.9.png" alt="Circuit Three - Image 3.9" class="pc-image">
+            </div>
+            <p>By adding those three exposed wires (or foil pads) as capacitive “buttons” and wiring them through the CapacitanceSensor library into different Arduino pins, I turned simple pieces of metal into touch-sensitive inputs. In my code, I read each pad’s capacitance value, compare it to a threshold, and then play a distinct musical pitch on the piezo whenever someone touches wire 1, 2, or 3 (C4, D4, or E4). This pattern—three parallel touch inputs feeding a single audible output.</p>
+
+            <div class="image-container single">
+                <img src=".\Project 2C Image\Image 3.10.jpg" alt="Circuit Three - Image 3.10" class="pc-image">
+            </div>
+            <div class="image-container single">
+                <img src=".\Project 2C Image\Image 3.11.jpg" alt="Circuit Three - Image 3.11" class="pc-image">
+            </div>
+            <div class="image-container single">
+                <img src=".\Project 2C Image\Image 3.12.jpg" alt="Circuit Three - Image 3.12" class="pc-image">
+            </div>
+
+            <h2>Reflection</h2>
+            <p>By mapping distance to light intensity, sound pitch, and motor speed, I can transform these raw numbers into interactive media. This way, the closeness of an audience member immediately shapes the audio-visual or kinetic behavior of my artwork. In the other circuit, a little light sensor watches how bright or dark it is and then tells a small servo motor to swing one way or the other. These reactions can be the basis of interactive media.</p>
+        </div>
+    </section>
+</body>
+</html>

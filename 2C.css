@@ -1,0 +1,164 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 2px solid #4c75af;
+}
+
+.header-left h1 {
+    font-size: 2.5rem;
+    color: #4c75af;
+}
+
+.header-right nav a {
+    font-size: 1.2rem;
+    color: #4c75af;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.header-right nav a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    text-align: center;
+    margin-top: 40px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #4c75af;
+    margin-bottom: 30px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image-box {
+    width: 250px;
+    height: 250px;
+    border: 3px solid #4c75af;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-box img {
+    width: 100%;
+    height: 85%; /* Set a fixed height for the image to ensure the text has space */
+    object-fit: cover;
+}
+
+.image-box p {
+    background-color: #4c75af;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    margin: 0; /* Remove any margin */
+}
+
+.image-box a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.image-box a:hover p {
+    background-color: #4c75af;
+}
+
+
+/* Physical Computing Section */
+.physical-computing {
+    max-width: 800px;
+    margin: 60px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.pc-image {
+    width: auto;
+    height: 50vh;
+    display: block;
+    margin: 0 auto 20px;
+    object-fit: cover;
+}
+
+.pc-text h2 {
+    color: #004080;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.pc-text p,
+.pc-text ol {
+    color: #00264d;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.pc-text ol {
+    padding-left: 20px;
+}
+
+.pc-text li {
+    margin-bottom: 10px;
+}
+
+/* Hardware & Software Overview Section */
+.hw-overview {
+    max-width: 800px;
+    margin: 60px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hw-text h2 {
+    color: #004080;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hw-text p,
+.hw-text ul,
+.hw-text ol {
+    color: #00264d;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.hw-text ul,
+.hw-text ol {
+    padding-left: 20px;
+}
+
+.hw-text li {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Varela+Round&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 3</title>
+    <style>
+        body {
+            font-family: "Varela Round", sans-serif;
+            background-color: #a1d08e; 
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Fix header position and layout */
+        header {
+            position: fixed; /* Keep it always on top */
+            top: 10px;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between; /* Space between left and right elements */
+            align-items: center;
+            padding: 10px;
+            z-index: 1000; /* Ensure it's above other elements */
+        }
+
+        /* Style for the go-back button on the left */
+        #backButton {
+            width: 40px;
+            cursor: pointer;
+            margin-left: 20px;
+        }
+
+        /* Container for the home and sound icons (aligned to the right) */
+        .header-icons {
+            display: flex;
+            gap: 15px;
+            margin-right: 20px;
+        }
+
+        /* Style for icons (home & sound buttons) */
+        .icon {
+            width: 40px;
+            cursor: pointer;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            padding: 20px;
+        }
+        .text {
+            font-size: 48px;
+            font-weight: bold;
+            color: black;
+            display: flex;
+            flex-direction: column;
+        }
+        .section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+        }
+        .section img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .section h2 {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        .section p {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="./list.html"><img src="./images/left-arrow.png" id="backButton" class="icon" alt="Go Back"></a> <!-- Go Back button -->
+        <div class="header-icons">
+            <a href="2A.html"><img src="./images/snowed-mountains.png" id="homeButton" class="icon" alt="Home"></a> <!-- Home button -->
+            <img src="./images/volume.png" id="soundButton" class="icon" alt="Sound"> <!-- Sound button -->
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="text">
+            <span>W</span>
+            <span>e</span>
+            <span>e</span>
+            <span>k</span>
+            <span> </span>
+            <span>3</span>
+        </div>
+        <div class="section">
+            <img src="./images/Font.png" alt="Font">
+            <h2>Font: Varela Round</h2>
+            <p>• This font has soft and rounded edges, making it easy to read.</p>
+            <p>• The rounded shapes give a friendly and approachable feel which match the theme journey.</p>
+        </div>
+        <div class="section">
+            <img src="./images/wireframe.jpg" alt="wireframe">
+            <h2>Wireframe for Workbook</h2>
+            <p>• It has a home page, a list page and weekly practice pages.</p>
+            <p>• It includes icons, buttons, audios, links, fonts and images.</p>
+        </div>
+        <div class="section">
+            <img src="./images/practice.png" alt="Practice in class">
+            <h2>Practice In Class</h2>
+            <p>• Practice of using html and css styling.</p>
+        </div>
+        <div class="section">
+            <img src="./images/colour palette.png" alt="color palette">
+            <h2>Colour Palette</h2>
+            <p>•I want to make a theme of season. This is the colour palette for spring which are soft and natural colours.</p>
+        </div>
+    </div>
+
+    <!-- Background music that plays automatically -->
+    <audio id="backgroundMusic" src="./music/春野之森.mp3" autoplay loop></audio>
+
+    <script src="script.js"></script> <!-- Link to external JavaScript -->
+</body>
+</html>

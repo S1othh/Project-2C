@@ -1,0 +1,191 @@
+/* Global styles */
+body {
+    font-family: "Varela Round", sans-serif;
+    text-align: center;
+    background-color: #ecf1ea;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Fix header position and layout */
+header {
+    position: fixed; /* Keep it always on top */
+    top: 10px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Space between left and right elements */
+    align-items: center;
+    padding: 10px;
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+/* Style for the go-back button on the left */
+#backButton {
+    width: 40px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+/* Container for the home and sound icons (aligned to the right) */
+.header-icons {
+    display: flex;
+    gap: 15px;
+    margin-right: 20px;
+}
+
+/* Style for icons (home & sound buttons) */
+.icon {
+    width: 40px;
+    cursor: pointer;
+}
+
+
+/* Centered main content */
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 1s ease-in-out; /* Smooth transition effect */
+}
+
+/* Hidden content that appears on click */
+#hiddenContent {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Character image styling */
+#character {
+    width: 250px;
+}
+
+/* text*/
+#message {
+    font-size: 24px; /* Increase font size */
+    font-weight: bold; /* Make it bold for emphasis */
+}
+
+/* Start button styling */
+#startButton {
+    font-family: "Varela Round", sans-serif;
+    margin-top: 10px;
+    padding: 15px 30px;
+    background-color: #a1d08e;
+    color: rgb(253, 255, 253);
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+/* Start button hover effect */
+#startButton:hover {
+    background-color: #88b277;
+}
+
+
+/*list page*/
+/* Set up horizontal scrolling */
+body {
+    margin: 0;
+    overflow-x: scroll; /* Allow horizontal scrolling */
+    overflow-y: hidden; /* Prevent vertical scrolling */
+    white-space: nowrap; /* Keep content in a single row */
+}
+
+/* Background container to hold both images */
+.background-container {
+    display: flex; /* Arrange background images in a row */
+    width: 200vw; /* Extend width to fit both images */
+    height: 100vh; /* Full viewport height */
+}
+
+/* Background images */
+.background {
+    
+    height: 100vh;
+    object-fit: cover; /* Cover full height */
+}
+
+/* Car positioning */
+/* Default car image */
+#car {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    transition: opacity 0.2s ease-in-out;
+}
+
+/* Change car image when scrolling */
+.scrolling #car {
+    content: url('./images/mini-car (1).gif'); /* Change to GIF when scrolling */
+}
+
+
+/* Position "Scroll to Begin" text in the center of the first image */
+.scroll-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    background: rgba(10, 58, 100, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+/* Wrapper to hold background images */
+.background-wrapper {
+    position: relative; /* Ensure absolute children are positioned within this */
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Ensure week buttons are positioned relative to the second image */
+.week-buttons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 70px;
+}
+
+
+/* Style circular buttons */
+.week-btn {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Color styles for buttons */
+.blue { 
+    font-family: "Varela Round", sans-serif;
+    background: rgb(89, 110, 183);
+}
+.green { 
+    font-family: "Varela Round", sans-serif;
+    background: rgb(103, 170, 103); 
+}
+.white { 
+    font-family: "Varela Round", sans-serif;
+    background: rgb(249, 253, 255); color: black; 
+} 
+
+

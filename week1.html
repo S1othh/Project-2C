@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Varela+Round&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 1</title>
+    <style>
+        body {
+            font-family: "Varela Round", sans-serif;
+            background-color: #a1d08e; 
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Fix header position and layout */
+        header {
+            position: fixed; /* Keep it always on top */
+            top: 10px;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between; /* Space between left and right elements */
+            align-items: center;
+            padding: 10px;
+            z-index: 1000; /* Ensure it's above other elements */
+        }
+
+        /* Style for the go-back button on the left */
+        #backButton {
+            width: 40px;
+            cursor: pointer;
+            margin-left: 20px;
+        }
+
+        /* Container for the home and sound icons (aligned to the right) */
+        .header-icons {
+            display: flex;
+            gap: 15px;
+            margin-right: 20px;
+        }
+
+        /* Style for icons (home & sound buttons) */
+        .icon {
+            width: 40px;
+            cursor: pointer;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            padding: 20px;
+        }
+        .text {
+            font-size: 48px;
+            font-weight: bold;
+            color: black;
+            display: flex;
+            flex-direction: column;
+        }
+        .section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+        }
+        .section img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .section h2 {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        .section p {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="./list.html"><img src="./images/left-arrow.png" id="backButton" class="icon" alt="Go Back"></a> <!-- Go Back button -->
+        <div class="header-icons">
+            <a href="./2A.html"><img src="./images/snowed-mountains.png" id="homeButton" class="icon" alt="Home"></a> <!-- Home button -->
+            <img src="./images/volume.png" id="soundButton" class="icon" alt="Sound"> <!-- Sound button -->
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="text">
+            <span>W</span>
+            <span>e</span>S
+            <span>e</span>
+            <span>k</span>
+            <span> </span>
+            <span>1</span>
+        </div>
+        <div class="section">
+            <img src="./images/Gestures.png" alt="Gestures">
+            <h2>HUMAN COMPUTER IN YOUR FACE!</h2>
+            <p>• Creative gestures to interact with a device or object.</p>
+            <p>• For example, scream to turn the alarm off, dance or cry for a speaker to play music, and snap to turn the stove or microwave on.</p>
+        </div>
+        <div class="section">
+            <img src="./images/wireframe.png" alt="wireframe">
+            <h2>Simple Wireframe</h2>
+            <p>• This is a wireframe which contains a logo, a search box, icons, text and images.</p>
+        </div>
+        <div class="section">
+            <img src="./images/Tags.png" alt="tags">
+            <h2>Tags</h2>
+            <p>• We use s set of tags and place them in the correct order to build this wireframe.</p>
+        </div>
+        <div class="section">
+            <img src="./images/Map2.jpg" alt="map">
+            <h2>Hunt'n'Gather</h2>
+            <p>• See film footage, historic photos, archival maps, and more bringing Happy Valley's history to life, and have a poke at the interactive screen which highlights the area's built and natural environment, intangible components, cultural diversity markers, and more by casting projections onto a large topographic model at the centre of the exhibition.</p>
+        </div>
+    </div>
+
+    <!-- Background music that plays automatically -->
+    <audio id="backgroundMusic" src="./music/春野之森.mp3" autoplay loop></audio>
+
+    <script src="script.js"></script> <!-- Link to external JavaScript -->
+</body>
+</html>

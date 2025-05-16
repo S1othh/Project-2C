@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week Seven - In-Class Activity</title>
+    <link rel="stylesheet" href="2C.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <h1>Workbook 2C</h1>
+        </div>
+        <div class="header-right">
+            <nav>
+                <a href="./2A.html">2A</a>
+                <a href="./week4.html">2B</a>
+                <a href="./2C.html">2C</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hw-overview">
+        <div class="hw-text">
+            <h2>Week Seven</h2>
+            <h2>In Class Activity</h2>
+
+            <div class="image-container single">
+                <img src=".\Project 2C Image\image 2.1.jpg" alt="Week 7 - Image 2.1" class="pc-image">
+                <p>We first recognize different physical components and what they are used for.</p>
+            </div>
+
+            <div class="image-container single">
+                <img src=".\Project 2C Image\Image 2.2.jpg" alt="Week 7 - Image 2.2" class="pc-image">
+                <p>Then we start making some circuits by using those components.</p>
+            </div>
+
+            <p>Here is a basic circuit I made. A solderless breadboard is used to create this setup, which is a compact bench-power system. The black Elegoo module that is clipped to the board receives its raw input from the small 9 V snap-on battery and outputs a regulated 5 V (or switchable 3.3 V) on the red and blue power rails. The black clip returns to earth after the red jumper wire transfers the controlled voltage to a single red LED that is put into the board's holes along with a series resistor. The regulator provides a simple, self-contained power source for any tiny electronics experiments or sensor-motor prototypes you might create on this breadboard by turning on the LED as soon as the battery is snapped on.</p>
+
+            <div class="image-container single">
+                <img src=".\Project 2C Image\Image 2.3.jpg" alt="Week 7 - Image 2.3" class="pc-image">
+                <p>I've added a temporary push‑button switch to the LED circuit in this version. The little tactile button now sits in series with the yellow LED's resistor and completes the circuit to +5 V only when you press it, as opposed to the past practice of the LED lighting as soon as power was supplied. That tiny switch element functions as a manual on/off control, meaning that the LED only illuminates while I hold it down and remains off until I press the button.</p>
+            </div>
+
+            <div class="image-container single">
+                <img src=".\Project 2C Image\Image 2.4.jpg" alt="Week 7 - Image 2.4" class="pc-image">
+                <p>After that, I connected the LED in series with a tiny potentiometer, which is a three-terminal variable resistor. I can alter the resistance in the LED's circuit by rotating its knob, which either restricts or increases the amount of current that may flow. The LED glows brighter with more current and dimmer with less. Put another way, I can manually and continuously adjust the LED's brightness thanks to that pot.</p>
+            </div>
+
+            <div class="image-container single">
+                <img src=".\Project 2C Image\Image 2.5.jpg" alt="Week 7 - Image 2.5" class="pc-image">
+                <p>I also attached a fan and a DC motor to my breadboard power rails. It draws current through its windings when I provide voltage across its two terminals, and the resulting electromagnetic forces rotate the shaft at a speed that is approximately proportional to the supply voltage.</p>
+            </div>
+
+            <div class="image-container single">
+                <img src=".\Project 2C Image\Image 2.6.jpg" alt="Week 7 - Image 2.6" class="pc-image">
+                <p>In order to install support for several microcontrollers, I first accessed the Boards Manager in the Arduino IDE. I can create <code>setup()</code> and <code>loop()</code> code, build it, and upload it straight to my board once it is in place and your USB-to-TTL cable is plugged in.</p>
+            </div>
+
+            <h2>Reflection</h2>
+            <p>I learned about the fundamental components of physical computing by progressively adding buttons, potentiometers, buzzers, LEDs, and tiny DC motors to a breadboard: multimodal outputs that provide motion, sound, and visual feedback, and user inputs that detect interactions. When all the parts are installed, a basic power rail becomes a responsive system that, when pressed, rotated, or energized, can directly produce light, sound, or motion. Almost all interactive media and kinetic art are founded on these fundamental ideas: by connecting them to a microcontroller, I can program moving sculptures that respond to their surroundings, soundscapes that vary as a dial is turned, or light shows that pulse in response to human touch. I develop and make interesting interactive art installations using these experiments.</p>
+        </div>
+    </section>
+</body>
+</html>

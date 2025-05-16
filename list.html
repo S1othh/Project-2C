@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Varela+Round&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <header>
+        <a href="./index.html"><img src="./images/left-arrow.png" id="backButton" class="icon" alt="Go Back"></a> <!-- Go Back button -->
+        <div class="header-icons">
+            <a href="./2A.html"><img src="./images/snowed-mountains.png" id="homeButton" class="icon" alt="Home"></a> <!-- Home button -->
+            <img src="./images/volume.png" id="soundButton" class="icon" alt="Sound"> <!-- Sound button -->
+        </div>
+    </header>
+    
+
+    <div class="background-container">
+        <!-- First background image with text -->
+        <div class="background-wrapper">
+            <img src="./images/spring 1.jpg" class="background" id="bg1">
+            <p class="scroll-text">Scroll to Begin</p> <!-- Text in the middle -->
+        </div>
+    
+        <!-- Second background image with buttons -->
+        <div class="background-wrapper">
+            <img src="./images/spring 2.jpg" class="background" id="bg2">
+            <div class="week-buttons">
+                <a href="week1.html"><button class="week-btn blue">Week 1</button></a>
+                <a href="week2.html"><button class="week-btn green">Week 2</button></a>
+                <a href="week3.html"><button class="week-btn white">Week 3</button></a>
+            </div>
+        </div>
+    </div>
+    
+
+    <img id="car" src="./images/mini-car.png" alt="Car"> <!-- Default car image -->
+
+    <!-- Background music that plays automatically -->
+    <audio id="backgroundMusic" src="./music/春野之森.mp3" autoplay loop></audio>
+
+    <script src="script.js"></script> <!-- Link to external JavaScript -->
+</body>
+</html>

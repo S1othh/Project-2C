@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Varela+Round&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workbook</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <!-- Header with home and sound buttons -->
+    <header>
+        <div class="header-icons">
+            <img src="./images/snowed-mountains.png" id="homeButton" class="icon" alt="Home"> <!-- Home button -->
+            <img src="./images/volume.png" id="soundButton" class="icon" alt="Sound"> <!-- Sound button -->
+        </div>
+    </header>
+    
+    <!-- Main content with welcome text -->
+    <main id="content">
+        <h1 id="welcomeText">Welcome to my workbook!</h1>
+        <p id="author"><b>- Junlan Wu</b></p>
+        <p id="reminder">-Click the mountain icon if you want to come back to this page.</p>
+        <p id="reminder">-Double click the sound icon if there's no music playing.</p>
+        <p id="reminder">-Click the left-arrow button if you want to go back to the previous page.</p>
+        <p id="reminder">-Click any text to start.-</p>
+    </main>
+    
+    <!-- Hidden content that appears after clicking -->
+    <div id="hiddenContent" class="hidden">
+        <img src="./images/me.png" id="character" alt="Character"> <!-- Character image -->
+        <p id="message">Are you ready to join my journey?</p>
+        <a href="./list.html"><button id="startButton">Start</button></a> <!-- Start button -->
+    </div>
+    
+    <!-- Background music that plays automatically -->
+    <audio id="backgroundMusic" src="./music/小可爱的诗.mp3" autoplay loop></audio>
+    
+    <script src="script.js"></script> <!-- Link to external JavaScript file -->
+</body>
+</html>

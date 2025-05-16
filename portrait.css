@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8c9d4; /* Soft background color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+h1 {
+    color: magenta;
+    font-size: 3em;
+    text-align: center;
+}
+
+.portrait-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.portrait-image {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.description-container {
+    width: 300px; /* Limit width of the description */
+    max-width: 80%; /* Responsive limit */
+    margin-left: 20px;
+}
+
+.description {
+    text-align: left;
+    color: #e62c57;
+}
+
+#fullCodeBtn {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#codeImage {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#codeImage img {
+    width: 500px;
+    height: 500px;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: -1; /* Ensure circles stay in the background */
+    opacity: 0.7; /* Make circles less prominent */
+}
